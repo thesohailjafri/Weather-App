@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+span {
+  font-weight: 500;
+}
+
+.row {
+  padding: 0px 30px !important;
+  -webkit-column-gap: 30px !important;
+          column-gap: 30px !important;
+  -webkit-transition: .25 easy !important;
+  transition: .25 easy !important;
+}
+
+.ui.menu {
+  margin-bottom: 15px !important;
+}
+
+.sectionHead {
+  font-size: 22px;
+  padding: 5px;
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.sectionCard {
+  max-width: 290px !important;
+  min-width: 290px !important;
+  max-height: 290px !important;
+  min-height: 290px !important;
+  margin: 10px auto !important;
+  margin-bottom: 30px !important;
+}
+
+.dropdownMenu {
+  display: -ms-grid !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.App {
+  padding-bottom: 50px;
+}
+
+@-webkit-keyframes configure-clockwise {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes configure-clockwise {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes configure-xclockwise {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  25% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+  }
+  75% {
+    -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+  }
+  100% {
+    -webkit-transform: rotate(-315deg);
+            transform: rotate(-315deg);
+  }
+}
+
+@keyframes configure-xclockwise {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  25% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+  }
+  75% {
+    -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+  }
+  100% {
+    -webkit-transform: rotate(-315deg);
+            transform: rotate(-315deg);
+  }
+}
+
+.loader {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: White;
+  -webkit-transition: opacity .25s ease-out;
+  transition: opacity .25s ease-out;
+}
+
+.loader .spinner-box {
+  -webkit-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out;
+}
+
+.loader .configure-border-1 {
+  width: 115px;
+  height: 115px;
+  padding: 2px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  -webkit-animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
+          animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
+}
+
+.loader .configure-border-2 {
+  width: 115px;
+  height: 115px;
+  padding: 2px;
+  left: -115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: darkslategrey;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;
+          animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;
+}
+
+.loader .configure-core {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  .row {
+    padding: 0px auto !important;
+  }
+}
+/*# sourceMappingURL=app.css.map */
